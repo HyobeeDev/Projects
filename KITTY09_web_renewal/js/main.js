@@ -65,3 +65,13 @@ new Swiper('.sale .swiper', {
     nextEl: '.sale .swiper-button-next'
   }
 })
+// review_swiper
+new Swiper('.review_outer .swiper', {
+  slidesPerView: '5',
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    prevEl: '.review_outer .swiper-button-prev',
+    nextEl: '.review_outer .swiper-button-next'
+  }
+})

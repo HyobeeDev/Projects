@@ -58,7 +58,7 @@ new Swiper('.main_visual_outer .swiper', {
 // sale_swiper
 new Swiper('.sale .swiper', {
   slidesPerView: '4',
-  spaceBetween: 20,
+  spaceBetween: 30,
   loop: true,
   navigation: {
     prevEl: '.sale .swiper-button-prev',

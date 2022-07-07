@@ -602,44 +602,6 @@ a {text-decoration: none;}
 
 
 /*------------best--------------*/
-.best {padding: 50px 0 100px 0;}
-.best_items {
-  display: flex;
-  gap: 20px;
-  height: 400px;
-  text-align: center;
-}
-.best_items>a {
-  flex: 1;
-  border-radius: 20px;
-  background-color: #ccc;
-}
-.best_items a {
-  color: black;
-}
-.best_items>div {
-  flex: 2;
-}
-.best_items .best_2to5>ul {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
-  height: 190px;
-}
-.best_items .best_2to5>ul:last-child {
-  margin-bottom: 0;
-}
-.best_items .best_2to5>ul li {
-  flex: 1;
-  border-radius: 20px;
-  background-color: #ccc;
-}
-
-.sneck_items, .etc_items {display: none;}
-
-
-
-/*------------best--------------*/
 .best_category {
   display: flex;
   height: 50px;
@@ -654,6 +616,7 @@ a {text-decoration: none;}
   border-left: 1px solid #d7d9df;
   border-right: 1px solid #d7d9df;
   border-radius: 10px 10px 0 0;
+  cursor: pointer;
   transition: all .2s;
 }
 .best_category_active {
@@ -664,6 +627,119 @@ a {text-decoration: none;}
   font-weight: 500;
   text-decoration: underline;
 }
+.best {padding: 50px 0 100px 0;}
+.best_items {
+  display: flex;
+  gap: 20px;
+  height: 400px;
+  text-align: center;
+}
+.best_items>a {
+  position: relative;
+  flex: 1;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+}
+.best_items a {
+  position: relative;
+  display: block;
+  color: white;
+}
+.best_items>a div {
+  height: 400px;
+  text-indent: -999999px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: url('../img/best_1_01.jpeg') no-repeat center center/100%;
+  background-color: #FAEEE2;
+  transition: background-size .3s ease;
+}
+.best_items>a:hover div {
+  background-size: 110%;
+}
+.best_2to5 a {display: block;}
+.best_2to5 a>div {
+  height: 190px;
+  text-indent: -999999px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: url('../img/best_1_02.jpeg') no-repeat center center/60%;
+  background-color: #FAEEE2;
+  transition: background-size .3s ease;
+}
+.best_2to5 a:hover>div {
+  background-size: 70%;
+}
+.best_2to5 .best_1_02 {background-image: url('../img/best_1_02.jpeg');}
+.best_2to5 .best_1_03 {background-image: url('../img/best_1_03.jpeg');}
+.best_2to5 .best_1_04 {background-image: url('../img/best_1_04.jpeg'); background-color: #F6F6F6;}
+.best_2to5 .best_1_05 {background-image: url('../img/best_1_05.jpeg'); background-color: #F6F6F6;}
+
+.sneck_items .best_2to5 .best_1_01 {background-image: url('../img/best_2_01.jpeg');}
+.sneck_items .best_2to5 .best_1_02 {background-image: url('../img/best_2_02.jpeg');}
+.sneck_items .best_2to5 .best_1_03 {background-image: url('../img/best_2_03.jpeg');}
+.sneck_items .best_2to5 .best_1_04 {background-image: url('../img/best_2_04.jpeg');}
+.sneck_items .best_2to5 .best_1_05 {background-image: url('../img/best_2_05.jpeg');}
+
+.etc_items .best_2to5 .best_1_01 {background-image: url('../img/best_3_01.jpeg');}
+.etc_items .best_2to5 .best_1_02 {background-image: url('../img/best_3_02.jpeg');}
+.etc_items .best_2to5 .best_1_03 {background-image: url('../img/best_3_03.jpeg');}
+.etc_items .best_2to5 .best_1_04 {background-image: url('../img/best_3_04.jpeg');}
+.etc_items .best_2to5 .best_1_05 {background-image: url('../img/best_3_05.jpeg');}
+
+.best_items>div {
+  flex: 2;
+}
+.best_items>a>ul, .best_items .best_2to5 a>ul {
+  position: absolute;
+  top: 100%; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  transition: all .3s ease;
+}
+.best_items>a:hover>ul {
+  top: 83%;
+}
+.best_items .best_2to5 a:hover>ul {
+  top: 68%;
+}
+.best_items .best_2to5 a {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.best_items .best_2to5>ul {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  height: 190px;
+}
+.best_items .best_2to5>ul:last-child {
+  margin-bottom: 0;
+}
+.best_items .best_2to5>ul li {
+  flex: 1;
+  border-radius: 20px;
+}
+.best_items a ul li,
+.best_items .best_2to5>ul li:first-child {
+  margin-top: 5px;
+  line-height: 20px;
+}
+.best_items a ul li strong,
+.best_items .best_2to5>ul li:first-child strong {
+  color: #30D0B6;
+}
+.best_star_ranking {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: url('../img/star_ranking.png') no-repeat center center/contain;
+  background-color: red;
+}
+
+/* .sneck_items, .etc_items {display: none;} */
+
 
 
 /*------------sec_banner--------------*/

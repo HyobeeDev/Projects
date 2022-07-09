@@ -1027,3 +1027,65 @@ a {text-decoration: none;}
   font-size: 12px;
   line-height: 20px;
 }
+
+
+
+/*------------quick_contents--------------*/
+.quick_contents {
+  position: fixed;
+  top: 10%;
+  right: 70px;
+  z-index: 10;
+}
+.quick_menu .quick_recent {
+  margin: 10px 0;
+  /* border: 1px solid #d7d9df; */
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #dadbe4;
+}
+.quick_menu .quick_recent p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #474d57;
+}
+.quick_menu .swiper {
+  width: 80px;
+}
+.quick_menu .swiper .swiper-slide>div {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.quick_menu .swiper .swiper-slide>div img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.top_btn {
+  text-align: center;
+  color: #ED4481;
+  border: 1px solid #ED4481;
+  background-color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all .3s ease;
+}
+.top_btn:hover {
+  background-color: #ED4481;
+  color: white; 
+}
+.top_btn span {
+   vertical-align: middle;
+   font-size: 15px;
+}

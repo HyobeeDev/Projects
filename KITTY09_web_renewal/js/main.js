@@ -65,13 +65,29 @@ new Swiper('.sale .swiper', {
     nextEl: '.sale .swiper-button-next'
   }
 })
+// shop_banner
+new Swiper('.shop_banner .swiper', {
+  slidesPerView: '1',
+  loop: true,
+  autoplay: {
+    delay: 3000
+  },
+  navigation: {
+    prevEl: '.shop_banner .swiper-button-prev',
+    nextEl: '.shop_banner .swiper-button-next'
+  }
+})
 // review_swiper
-new Swiper('.review_outer .swiper', {
-  slidesPerView: '5',
+new Swiper('.review .swiper', {
+  slidesPerView: '4',
   spaceBetween: 20,
   loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
   navigation: {
-    prevEl: '.review_outer .swiper-button-prev',
-    nextEl: '.review_outer .swiper-button-next'
+    prevEl: '.review .swiper-button-prev',
+    nextEl: '.review .swiper-button-next'
   }
 })

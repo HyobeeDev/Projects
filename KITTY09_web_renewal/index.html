@@ -11,6 +11,10 @@
   <!-- swiper cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.css" />
+  <!-- gsap cdn : 애니메이션 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <!-- gsap cdn : 애니메이션 + 화면이동 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
 
   <script defer src="./js/main.js"></script>
 </head>
@@ -80,19 +84,19 @@
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="./img/main_visual_web_01.png" alt="">
+          <img src="./img/main_visual_web_01.png" alt="main_visual_web_01">
         </div>
         <div class="swiper-slide">
-          <img src="./img/main_visual_web_02.png" alt="">
+          <img src="./img/main_visual_web_02.png" alt="main_visual_web_02">
         </div>
         <div class="swiper-slide">
-          <img src="./img/main_visual_web_03.png" alt="">
+          <img src="./img/main_visual_web_03.png" alt="main_visual_web_03">
         </div>
         <div class="swiper-slide">
-          <img src="./img/main_visual_web_04.png" alt="">
+          <img src="./img/main_visual_web_04.png" alt="main_visual_web_04">
         </div>
         <div class="swiper-slide">
-          <img src="./img/main_visual_web_05.png" alt="">
+          <img src="./img/main_visual_web_05.png" alt="main_visual_web_05">
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -152,82 +156,84 @@
     </a>
   </section><!--metapho_menu-->
   
-  <section class="hotdeal layout_align">
-    <div class="sec_title">
-      <p>딱 1시간만 이 가격!</p>
-      <div class="sec_title_box">
-      <h2>원타임 핫딜</h2>
-        <div class="sec_title_more">
-          <strong>더보러가기</strong>
-          <span class="material-symbols-outlined">
-            arrow_right_alt
-          </span>
+  <section class="hotdeal layout_align hotdeal_scroll_up">
+    <div class="default">
+      <div class="sec_title">
+        <p>딱 1시간만 이 가격!</p>
+        <div class="sec_title_box">
+        <h2>원타임 핫딜</h2>
+          <div class="sec_title_more">
+            <strong>더보러가기</strong>
+            <span class="material-symbols-outlined">
+              arrow_right_alt
+            </span>
+          </div>
         </div>
-      </div>
-    </div><!--sec_title-->
+      </div><!--sec_title-->
 
-    <div class="countdown">
-      <ul>
-        <li><span id="day"></span>Day</li>
-        <li><span id="hours"></span>Hours</li>
-        <li><span id="minutes"></span>Minutes</li>
-        <li><span id="seconds"></span>Seconds</li>
-      </ul>
+      <!-- <div class="countdown">
+        <ul>
+          <li><span id="day"></span>Day</li>
+          <li><span id="hours"></span>Hours</li>
+          <li><span id="minutes"></span>Minutes</li>
+          <li><span id="seconds"></span>Seconds</li>
+        </ul>
+      </div> -->
+      
+      <div class="hotdeal_items">
+        <a href="#!" class="top_item">
+          <div class="top_item_img">img</div>
+          <div class="top_item_texts">
+            <div class="texts_box">
+              <p>게으른 고양이도 절대 못 지나치는 펫링 캣휠 C2</p>
+              <ul>
+                <li><del>750,000원</del></li>
+                <li><strong>20%</strong></li>
+              </ul>
+              <span><strong>575,000</strong>원</span>
+            </div>
+          </div>
+        </a>
+        <ul class="bottom_items">
+          <li><a href="#!" class="bottom_item">
+            <div class="bottom_item_img">img</div>
+            <div class="bottom_item_texts">
+              <p>오리젠 6 피쉬 캣 1.8kg</p>
+              <ul>
+                <li><del>46,000원</del></li>
+                <li><strong>10%</strong></li>
+              </ul>
+              <span><strong>41,400</strong>원</span>
+            </div>
+          </a></li>
+          <li><a href="#!" class="bottom_item">
+            <div class="bottom_item_img">img</div>
+            <div class="bottom_item_texts">
+              <p>웨루바 캣츠인더키친 치킨 프리카세 캔 90g</p>
+              <ul>
+                <li><del>728,00원</del></li>
+                <li><strong>32%</strong></li>
+              </ul>
+              <span><strong>1,900</strong>원</span>
+            </div>
+          </a></li>
+          <li><a href="#!" class="bottom_item">
+            <div class="bottom_item_img">img</div>
+            <div class="bottom_item_texts">
+              <p>와이어 깃털 낚싯대</p>
+              <ul>
+                <li><del>3,000원</del></li>
+                <li><strong>57%</strong></li>
+              </ul>
+              <span><strong>1,300</strong>원</span>
+            </div>
+          </a></li>
+        </ul>
+      </div><!--hotdeal_items-->
     </div>
-    
-    <div class="hotdeal_items">
-      <a href="#!" class="top_item">
-        <div class="top_item_img">img</div>
-        <div class="top_item_texts">
-          <div class="texts_box">
-            <p>게으른 고양이도 절대 못 지나치는 펫링 캣휠 C2</p>
-            <ul>
-              <li><del>750,000원</del></li>
-              <li><strong>20%</strong></li>
-            </ul>
-            <span><strong>575,000</strong>원</span>
-          </div>
-        </div>
-      </a>
-      <ul class="bottom_items">
-        <li><a href="#!" class="bottom_item">
-          <div class="bottom_item_img">img</div>
-          <div class="bottom_item_texts">
-            <p>오리젠 6 피쉬 캣 1.8kg</p>
-            <ul>
-              <li><del>46,000원</del></li>
-              <li><strong>10%</strong></li>
-            </ul>
-            <span><strong>41,400</strong>원</span>
-          </div>
-        </a></li>
-        <li><a href="#!" class="bottom_item">
-          <div class="bottom_item_img">img</div>
-          <div class="bottom_item_texts">
-            <p>웨루바 캣츠인더키친 치킨 프리카세 캔 90g</p>
-            <ul>
-              <li><del>728,00원</del></li>
-              <li><strong>32%</strong></li>
-            </ul>
-            <span><strong>1,900</strong>원</span>
-          </div>
-        </a></li>
-        <li><a href="#!" class="bottom_item">
-          <div class="bottom_item_img">img</div>
-          <div class="bottom_item_texts">
-            <p>와이어 깃털 낚싯대</p>
-            <ul>
-              <li><del>3,000원</del></li>
-              <li><strong>57%</strong></li>
-            </ul>
-            <span><strong>1,300</strong>원</span>
-          </div>
-        </a></li>
-      </ul>
-    </div><!--hotdeal_items-->
   </section><!--metapho_menu-->
   
-  <section class="sale">
+  <section class="sale sale_scroll_up">
     <div class="sec_title">
       <p>지금이 제일 싸요!</p>
       <div class="sec_title_box">
@@ -315,7 +321,7 @@
   </section><!--sale-->
 
   <section class="recommend_outer">
-    <div class="recommend layout_align">
+    <div class="recommend layout_align rocommend_scroll_up">
       <div class="sec_title">
         <p>당신에게 지금 필요한 건 뭐다?</p>
         <div class="sec_title_box">
@@ -708,7 +714,7 @@
     </div><!--recommend-->
   </section><!--recommend_outer-->
 
-  <section class="best layout_align">
+  <section class="best layout_align best_scroll_up">
     <div class="sec_title">
       <p>KITTY09 집사님들의 최애템!</p>
       <div class="sec_title_box">
@@ -728,141 +734,143 @@
       <div class="etc_category">용품</div>
     </div><!--best_category-->
 
-    <div class="feed_items best_items">
-      <a href="#!" class="best_1">
-        <div class="best_1_01">best_1_01</div>
-        <div class="best_star_ranking">1</div>
-        <ul>
-          <li>캣츠랑 캣앤키튼 5.4kg</li>
-          <li><strong>79,000</strong>원</li>
-        </ul>
-      </a>
-      <div class="best_2to5">
-        <ul>
-          <li><a href="#!">
-            <div class="best_1_02">best_1_02</div>
-            <ul>
-              <li>뉴트리나 리얼오플러스 캣 인도어 6kg</li>
-              <li><strong>57,000</strong>원</li>
-            </ul>
-          </a></li>
-          <li><a href="#!">
-            <div class="best_1_03">best_1_03</div>
-            <ul>
-              <li>뉴트로 내추럴 초이스 현미 2.27kg</li>
-              <li><strong>26,800</strong>원</li>
-            </ul>
-          </a></li>
-        </ul>
-        <ul>
-          <li><a href="#!">
-            <div class="best_1_04">best_1_04</div>
-            <ul>
-              <li>오리젠 피트앤트림 캣 5.4kg</li>
-              <li><strong>75,600</strong>원</li>
-            </ul>
-          </a></li>
-          <li><a href="#!">
-            <div class="best_1_05">best_1_05</div>
-            <ul>
-              <li>오리젠 캣앤키튼 1.8kg</li>
-              <li><strong>39,600</strong>원</li>
-            </ul>
-          </a></li>
-        </ul>
-      </div>
-    </div><!--feed_items--> 
-    <div class="sneck_items best_items">
-      <a href="#!" class="best_1">
-        <div class="best_1_01">best_1_01</div>
-        <div class="best_star_ranking">1</div>
-        <ul>
-          <li>이나바 챠오 츄르 120개입</li>
-          <li><strong>56,000</strong>원</li>
-        </ul>
-      </a>
-      <div class="best_2to5">
-        <ul>
-          <li><a href="#!">
-            <div class="best_1_02">best_1_02</div>
-            <ul>
-              <li>이나바 챠오 츄르 닭가슴살 40개입</li>
-              <li><strong>18,900</strong>원</li>
-            </ul>
-          </a></li>
-          <li><a href="#!">
-            <div class="best_1_03">best_1_03</div>
-            <ul>
-              <li>굿프랜드 8가지맛 캔 24개입</li>
-              <li><strong>20,000</strong>원</li>
-            </ul>
-          </a></li>
-        </ul>
-        <ul>
-          <li><a href="#!">
-            <div class="best_1_04">best_1_04</div>
-            <ul>
-              <li>이나바 챠오 츄르 닭가슴살 4개입</li>
-              <li><strong>2,250</strong>원</li>
-            </ul>
-          </a></li>
-          <li><a href="#!">
-            <div class="best_1_05">best_1_05</div>
-            <ul>
-              <li>프리미엄 캣토리 6가지맛 캔 24개입</li>
-              <li><strong>16,800</strong>원</li>
-            </ul>
-          </a></li>
-        </ul>
-      </div>
-    </div><!--sneck_items--> 
-    <div class="etc_items best_items">
-      <a href="#!" class="best_1">
-        <div class="best_1_01">best_1_01</div>
-        <div class="best_star_ranking">1</div>
-        <ul>
-          <li>에버크린 ES UN 19kg</li>
-          <li><strong>31,000</strong>원</li>
-        </ul>
-      </a>
-      <div class="best_2to5">
-        <ul>
-          <li><a href="#!">
-            <div class="best_1_02">best_1_02</div>
-            <ul>
-              <li>두부랑 캣츠 이코노미 오리지날 7L</li>
-              <li><strong>8,500</strong>원</li>
-            </ul>
-          </a></li>
-          <li><a href="#!">
-            <div class="best_1_03">best_1_03</div>
-            <ul>
-              <li>도트캣 스크래쳐 빅슬로프</li>
-              <li><strong>19,800</strong>원</li>
-            </ul>
-          </a></li>
-        </ul>
-        <ul>
-          <li><a href="#!">
-            <div class="best_1_04">best_1_04</div>
-            <ul>
-              <li>버박 앨러밀 약용샴푸 200ml</li>
-              <li><strong>19,800</strong>원</li>
-            </ul>
-          </a></li>
-          <li><a href="#!">
-            <div class="best_1_05">best_1_05</div>
-            <ul>
-              <li>도트캣 밀크 스크래쳐 하우스 흰우유</li>
-              <li><strong>6,900</strong>원</li>
-            </ul>
-          </a></li>
-        </ul>
-      </div>
-    </div><!--etc_items-->
+    <div class="best_items_container">
+      <div class="feed_items best_items">
+        <a href="#!" class="best_1">
+          <div class="best_1_01">best_1_01</div>
+          <div class="best_star_ranking">1</div>
+          <ul>
+            <li>캣츠랑 캣앤키튼 5.4kg</li>
+            <li><strong>79,000</strong>원</li>
+          </ul>
+        </a>
+        <div class="best_2to5">
+          <ul>
+            <li><a href="#!">
+              <div class="best_1_02">best_1_02</div>
+              <ul>
+                <li>뉴트리나 리얼오플러스 캣 인도어 6kg</li>
+                <li><strong>57,000</strong>원</li>
+              </ul>
+            </a></li>
+            <li><a href="#!">
+              <div class="best_1_03">best_1_03</div>
+              <ul>
+                <li>뉴트로 내추럴 초이스 현미 2.27kg</li>
+                <li><strong>26,800</strong>원</li>
+              </ul>
+            </a></li>
+          </ul>
+          <ul>
+            <li><a href="#!">
+              <div class="best_1_04">best_1_04</div>
+              <ul>
+                <li>오리젠 피트앤트림 캣 5.4kg</li>
+                <li><strong>75,600</strong>원</li>
+              </ul>
+            </a></li>
+            <li><a href="#!">
+              <div class="best_1_05">best_1_05</div>
+              <ul>
+                <li>오리젠 캣앤키튼 1.8kg</li>
+                <li><strong>39,600</strong>원</li>
+              </ul>
+            </a></li>
+          </ul>
+        </div>
+      </div><!--feed_items--> 
+      <div class="sneck_items best_items">
+        <a href="#!" class="best_1">
+          <div class="best_1_01">best_1_01</div>
+          <div class="best_star_ranking">1</div>
+          <ul>
+            <li>이나바 챠오 츄르 120개입</li>
+            <li><strong>56,000</strong>원</li>
+          </ul>
+        </a>
+        <div class="best_2to5">
+          <ul>
+            <li><a href="#!">
+              <div class="best_1_02">best_1_02</div>
+              <ul>
+                <li>이나바 챠오 츄르 닭가슴살 40개입</li>
+                <li><strong>18,900</strong>원</li>
+              </ul>
+            </a></li>
+            <li><a href="#!">
+              <div class="best_1_03">best_1_03</div>
+              <ul>
+                <li>굿프랜드 8가지맛 캔 24개입</li>
+                <li><strong>20,000</strong>원</li>
+              </ul>
+            </a></li>
+          </ul>
+          <ul>
+            <li><a href="#!">
+              <div class="best_1_04">best_1_04</div>
+              <ul>
+                <li>이나바 챠오 츄르 닭가슴살 4개입</li>
+                <li><strong>2,250</strong>원</li>
+              </ul>
+            </a></li>
+            <li><a href="#!">
+              <div class="best_1_05">best_1_05</div>
+              <ul>
+                <li>프리미엄 캣토리 6가지맛 캔 24개입</li>
+                <li><strong>16,800</strong>원</li>
+              </ul>
+            </a></li>
+          </ul>
+        </div>
+      </div><!--sneck_items--> 
+      <div class="etc_items best_items">
+        <a href="#!" class="best_1">
+          <div class="best_1_01">best_1_01</div>
+          <div class="best_star_ranking">1</div>
+          <ul>
+            <li>에버크린 ES UN 19kg</li>
+            <li><strong>31,000</strong>원</li>
+          </ul>
+        </a>
+        <div class="best_2to5">
+          <ul>
+            <li><a href="#!">
+              <div class="best_1_02">best_1_02</div>
+              <ul>
+                <li>두부랑 캣츠 이코노미 오리지날 7L</li>
+                <li><strong>8,500</strong>원</li>
+              </ul>
+            </a></li>
+            <li><a href="#!">
+              <div class="best_1_03">best_1_03</div>
+              <ul>
+                <li>도트캣 스크래쳐 빅슬로프</li>
+                <li><strong>19,800</strong>원</li>
+              </ul>
+            </a></li>
+          </ul>
+          <ul>
+            <li><a href="#!">
+              <div class="best_1_04">best_1_04</div>
+              <ul>
+                <li>버박 앨러밀 약용샴푸 200ml</li>
+                <li><strong>19,800</strong>원</li>
+              </ul>
+            </a></li>
+            <li><a href="#!">
+              <div class="best_1_05">best_1_05</div>
+              <ul>
+                <li>도트캣 밀크 스크래쳐 하우스 흰우유</li>
+                <li><strong>6,900</strong>원</li>
+              </ul>
+            </a></li>
+          </ul>
+        </div>
+      </div><!--etc_items-->
+    </div><!--best_items_container-->
   </section><!--new-->
 
-  <section class="shop_banner layout_align">
+  <section class="shop_banner layout_align shop_scroll_up">
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -877,7 +885,7 @@
     </div>
   </section><!--sec_banner-->
 
-  <div class="review layout_align">
+  <div class="review layout_align review_scroll_up">
     <div class="sec_title">
       <p>구매 고객들의 생생한 후기</p>
       <div class="sec_title_box">
@@ -993,14 +1001,14 @@
           </ul>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-      <div class="swiper-pagination"></div>
     </div>
   </div><!--review-->
 
   <section class="campaign_outer">
-    <div class="campaign layout_align">
+    <div class="campaign layout_align campaign_scroll_up">
       <div class="sec_title">
         <p>KITTY09 공생 캠페인</p>
         <div class="sec_title_box">
@@ -1018,7 +1026,7 @@
     </div>
   </section><!--campaign_outer-->
 
-  <section class="info layout_align">
+  <section class="info layout_align info_scroll_up">
     <div class="notice">
       <ul class="info_title">
         <li>공지사항</li>
@@ -1130,34 +1138,35 @@
 
   <div class="quick_contents">
     <div class="quick_menu">
-      <div class="quick_coupon"><img src="./img/quick_qoupon.png" alt="quick_qoupon"></div>
+      <a href="#!" class="quick_coupon"><img src="./img/quick_qoupon.png" alt="quick_qoupon"></a href="#!">
       <div class="quick_recent">
         <p>최근 본 상품</p>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div><img src="./img/recommend_2_04.jpg" alt="recommend_2_04"></div>
-              <div><img src="./img/recommend_4_01.jpg" alt="recommend_4_01"></div>
-              <div><img src="./img/recommend_4_04.jpg" alt="recommend_4_04"></div>
+              <a href="#!"><img src="./img/recommend_2_04.jpg" alt="recommend_2_04"></a href="#!">
+              <a href="#!"><img src="./img/recommend_4_01.jpg" alt="recommend_4_01"></a href="#!">
+              <a href="#!"><img src="./img/recommend_4_04.jpg" alt="recommend_4_04"></a href="#!">
             </div>
             <div class="swiper-slide">
-              <div><img src="./img/recommend_5_04.jpg" alt="recommend_5_04"></div>
-              <div><img src="./img/rec_img4_02.jpg" alt="rec_img4_02"></div>
-              <div><img src="./img/rec_img3_01.jpg" alt="rec_img3_01"></div>
+              <a href="#!"><img src="./img/recommend_5_04.jpg" alt="recommend_5_04"></a href="#!">
+              <a href="#!"><img src="./img/rec_img4_02.jpg" alt="rec_img4_02"></a href="#!">
+              <!-- <a href="#!"><img src="./img/rec_img3_01.jpg" alt="rec_img3_01"></a href="#!"> -->
             </div>
           </div>
+          <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
       </div>
-    </div>
+    </div><!--quick_menu-->
     <div class="top_btn">
       TOP
       <span class="material-symbols-outlined">
         arrow_upward
       </span>
-    </div>
-  </div>
+    </div><!--top_btn-->
+  </div><!--quick_contents-->
 
 </body>
 </html>

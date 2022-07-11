@@ -169,6 +169,16 @@ window.addEventListener('scroll', () => {
 
 
 
+// header_swiper
+new Swiper('.header .swiper', {
+  direction: 'vertical',
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 2000
+  }
+})
+
 // main_visual_swiper
 new Swiper('.main_visual_outer .swiper', {
   slidesPerView: 'auto',
